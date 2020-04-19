@@ -3,12 +3,36 @@
     <head>
         <title> Music Thing </title>
         <!-- Your CSS -->
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <nav class="navbar fixed-top justify-content-between">
+            <a class="navbar-brand">Music Thing</a>
+            <div class="form-inline">
+                <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0">Search Track</button>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="results" class="row gallery justify-content-center">
+                <h3 id="help" class="text-center">  Search for a Gif above <br> Your results will display here</h3>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <p>Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </footer>
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <!-- Your Javascript -->
-        <script src="js/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
